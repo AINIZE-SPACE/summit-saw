@@ -1,0 +1,10 @@
+{
+  "name": "skill-library-governance",
+  "description": "Govern naming, scope, promotion, deprecation, and base-versus-adapter boundaries for the skill library.",
+  "scope": "project-incubating",
+  "audience": ["base"],
+  "status": "active",
+  "owners": ["summit-saw maintainers"],
+  "installTargets": ["project"],
+  "evidence": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "install-program",
+  "description": "Install a program into a project, agent runtime, domain branch, personal/global scope, or organization scope.",
+  "scope": "project-incubating",
+  "audience": ["base"],
+  "status": "active",
+  "owners": ["summit-saw maintainers"],
+  "installTargets": ["project", "domain"],
+  "evidence": [
+    "Created to give agents a common install workflow for summit-saw programs."
+  ]
+}

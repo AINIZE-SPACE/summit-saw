@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/summit-saw/domain.manifest.schema.json",
+  "title": "summit-saw domain manifest",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "status",
+    "owners",
+    "promotionLevel",
+    "branch",
+    "sourceProjects"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "deprecated",
+        "draft"
+      ]
+    },
+    "owners": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "promotionLevel": {
+      "type": "string",
+      "enum": [
+        "local",
+        "domain",
+        "ascent",
+        "main"
+      ]
+    },
+    "branch": {
+      "type": "string",
+      "pattern": "^(agent/[a-z0-9-]+/[a-z0-9-]+/[a-z0-9-]+|domain/[a-z0-9-]+|ascent|main)$"
+    },
+    "sourceProjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deprecatedBy": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

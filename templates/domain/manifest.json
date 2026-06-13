@@ -1,0 +1,10 @@
+{
+  "name": "replace-with-domain",
+  "description": "Replace with one sentence explaining the domain programmatic memory.",
+  "status": "draft",
+  "owners": ["replace-with-owner"],
+  "promotionLevel": "domain",
+  "branch": "domain/replace-with-domain",
+  "sourceProjects": [],
+  "evidence": []
+}

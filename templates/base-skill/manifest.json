@@ -1,0 +1,10 @@
+{
+  "name": "replace-with-skill-name",
+  "description": "Replace with one sentence explaining the reusable workflow.",
+  "scope": "personal-experiment",
+  "audience": ["base"],
+  "status": "draft",
+  "owners": ["replace-with-owner"],
+  "installTargets": ["project"],
+  "evidence": []
+}

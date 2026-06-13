@@ -1,0 +1,28 @@
+{
+  "name": "fitness-program-memory",
+  "description": "Fitness-domain programmatic memory seeded from the aifitness project.",
+  "programType": "domain-memory",
+  "status": "active",
+  "owners": ["summit-saw maintainers"],
+  "domain": "fitness",
+  "sourceBranch": "domain/fitness",
+  "installTargets": ["domain", "project"],
+  "components": [
+    {
+      "path": "domains/fitness/README.md",
+      "type": "doc"
+    },
+    {
+      "path": "domains/fitness/program-memory.md",
+      "type": "domain-memory"
+    },
+    {
+      "path": "domains/fitness/promotion-log.md",
+      "type": "doc"
+    }
+  ],
+  "platforms": ["summit-saw", "codex"],
+  "evidence": [
+    "Seeded from aifitness program memory."
+  ]
+}

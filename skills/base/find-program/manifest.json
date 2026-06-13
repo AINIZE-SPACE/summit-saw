@@ -1,0 +1,12 @@
+{
+  "name": "find-program",
+  "description": "Discover installable programs across branches, domains, base skills, agent adapters, and external skill platforms.",
+  "scope": "project-incubating",
+  "audience": ["base"],
+  "status": "active",
+  "owners": ["summit-saw maintainers"],
+  "installTargets": ["project", "domain"],
+  "evidence": [
+    "Created to support branch-first domain program discovery for agents."
+  ]
+}

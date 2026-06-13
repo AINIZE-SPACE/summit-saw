@@ -1,0 +1,11 @@
+{
+  "name": "replace-with-agent-adapter-name",
+  "description": "Replace with one sentence explaining the agent-specific adaptation.",
+  "scope": "personal-experiment",
+  "audience": ["codex"],
+  "status": "draft",
+  "owners": ["replace-with-owner"],
+  "installTargets": ["project"],
+  "baseSkill": "replace-with-base-skill",
+  "evidence": []
+}

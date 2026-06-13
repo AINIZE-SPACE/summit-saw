@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/summit-saw/skill.manifest.schema.json",
+  "title": "summit-saw skill manifest",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "scope",
+    "audience",
+    "status",
+    "owners"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "personal-experiment",
+        "project-incubating",
+        "domain-shared",
+        "ascent",
+        "team-promoted",
+        "organization-shared"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "promotionLevel": {
+      "type": "string",
+      "enum": [
+        "local",
+        "domain",
+        "ascent",
+        "main"
+      ]
+    },
+    "branch": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "base",
+          "codex",
+          "claude-code",
+          "harness",
+          "openclaw",
+          "other"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "deprecated",
+        "draft"
+      ]
+    },
+    "owners": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "installTargets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "project",
+          "personal-global",
+          "domain",
+          "team",
+          "organization"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "baseSkill": {
+      "type": "string"
+    },
+    "agentAdapters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deprecatedBy": {
+      "type": "string"
+    },
+    "sourceProjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

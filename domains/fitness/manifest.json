@@ -1,0 +1,16 @@
+{
+  "name": "fitness",
+  "description": "Fitness-domain programmatic memory seeded from the aifitness project.",
+  "scope": "domain-shared",
+  "audience": ["base", "codex"],
+  "status": "active",
+  "owners": ["summit-saw maintainers"],
+  "installTargets": ["domain", "project"],
+  "domain": "fitness",
+  "promotionLevel": "domain",
+  "branch": "domain/fitness",
+  "sourceProjects": ["E:\\my_project\\aifitness"],
+  "evidence": [
+    "Seeded from prior aifitness program memory: Sprint 3 planning, scheduled automation, repo maintenance, issue triage, and PR merge workflows."
+  ]
+}

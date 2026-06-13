@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/summit-saw/program.manifest.schema.json",
+  "title": "summit-saw program manifest",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "programType",
+    "status",
+    "owners",
+    "sourceBranch",
+    "installTargets"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "programType": {
+      "type": "string",
+      "enum": [
+        "skill",
+        "domain-memory",
+        "agent-adapter",
+        "bundle",
+        "mcp-tool",
+        "platform-package"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "active",
+        "deprecated"
+      ]
+    },
+    "owners": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "domain": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "sourceBranch": {
+      "type": "string"
+    },
+    "installTargets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "project",
+          "local",
+          "domain",
+          "ascent",
+          "main",
+          "external-platform"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "type"],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "skill",
+              "domain-memory",
+              "agent-adapter",
+              "script",
+              "reference",
+              "example",
+              "schema",
+              "doc"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "summit-saw",
+          "codex",
+          "claude-code",
+          "harness",
+          "openclaw",
+          "mcp",
+          "other"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

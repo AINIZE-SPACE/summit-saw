@@ -1,0 +1,11 @@
+{
+  "name": "reflection-skill-evolution",
+  "description": "Reflect on agent sessions, extract reusable workflow knowledge, evolve base or adapter skills, and install updates at the right scope.",
+  "scope": "project-incubating",
+  "audience": ["base"],
+  "status": "active",
+  "owners": ["summit-saw maintainers"],
+  "installTargets": ["project"],
+  "agentAdapters": ["codex", "claude-code", "harness", "openclaw"],
+  "evidence": []
+}

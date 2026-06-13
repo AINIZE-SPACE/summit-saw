@@ -1,0 +1,12 @@
+{
+  "name": "publish-program",
+  "description": "Validate, commit, tag, push, and publish programs to summit-saw or external skill platforms.",
+  "scope": "project-incubating",
+  "audience": ["base"],
+  "status": "active",
+  "owners": ["summit-saw maintainers"],
+  "installTargets": ["project", "domain"],
+  "evidence": [
+    "Created to support one-click publication and propagation to multiple agent skill platforms."
+  ]
+}
